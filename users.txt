@@ -1,0 +1,4 @@
+nombre,rut,carrera,telefono,email
+Juan Pérez,18.976.321-1,Informatica,56927534276,juan.perez@example.com
+María López,20.973.715-5,Civil,56921532463,maria.lopez@example.com
+Carlos Gómez,20.408.231-9,Mecanica,56991827396,carlos.gomez@example.com

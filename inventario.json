@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Colchoneta",
+        "imagen": "images/colchoneta.png",
+        "descripcion": "Colchoneta de 1.5 X 1 metro de tamaño",
+        "stock": 10
+    },
+    {
+        "nombre": "Pelota de Voleibol",
+        "imagen": "images/pelota-voley.png",
+        "descripcion": "Pelota de voleibol rudimentaria",
+        "stock": 10
+    },
+    {
+        "nombre": "Pelota de Futbol",
+        "imagen": "images/pelota-futbol.png",
+        "descripcion": "Pelota de futbol rudimentaria",
+        "stock": 10
+    },
+    {
+        "nombre": "Pelota de Basquetbol",
+        "imagen": "images/pelota-basket.png",
+        "descripcion": "Pelota de basquetbol rudimentaria",
+        "stock": 10
+    }
+]

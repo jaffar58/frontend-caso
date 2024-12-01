@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+    <div class="contenedor-con-margin"></div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+		<div class="container-fluid">
+			
+			<div class="toggler-container">
+				<button class="navbar-toggler" type="button" id="sidebarToggle">
+					<span class="navbar-toggler-icon" id="sidebarToggleIcon"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse">
+
+				<!--/////////////////////////////////////////////////////////////////////-->
+				<ul class="navbar-nav me-auto mb-lg-0 d-none d-md-flex">
+                    <li class="nav-item">
+						<a class="nav-link" href="inventarioPanolero.html"><h3>Inventario</h3></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#"><h3>Perfiles</h3></a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href="solicitudesPanolero.html"><h3>Solicitudes</h3></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="reportesPanolero.html"><h3>Reportes</h3></a>
+					</li>
+				</ul>
+				
+				
+				<!--/////////////////////////////////////////////////////////////////////-->
+			</div>
+			<div class="navbar-permanent">
+				<ul class="navbar-nav ms-auto">
+				
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="images/user-icon-png.png" alt="">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end position-absolute" aria-labelledby="navbarDropdownMenuLink">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="login.html">Cerrar Sesion</a></li>
+						</ul>
+					<li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="sidebar" class="sidebar d-md-none">
+		<ul class="nav flex-column">
+			<ul class="navbar-nav me-auto mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="inventarioPanolero.html"><h3>Inventario</h3></a>
+                </li>
+				<li class="nav-item">
+					<a class="nav-link" href="perfilesPanolero.html"><h3>Perfiles</h3></a>
+				</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="solicitudesPanolero.html"><h3>Solicitudes</h3></a>
+                </li>
+				<li class="nav-item">
+					<a class="nav-link" href="reportesPanolero.html"><h3>Reportes</h3></a>
+				</li>
+
+			</ul>
+		</ul>
+	</div>
+    <div class="container mb-4">
+		<div class="row align-items-center">
+			<!-- Título de "Perfiles" -->
+			<div class="col-auto">
+				<h1 class="mb-2 mb-md-0">Perfiles</h1>
+			</div>
+			<!-- Contenedor de botones -->
+			<div class="col-auto d-flex gap-2 flex-wrap">
+				<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">Añadir Usuario</button>
+				<label for="uploadExcel" class="btn btn-success">Cargar Excel</label>
+				<input type="file" id="uploadExcel" accept=".xlsx, .xls" style="display: none;">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-left align-items-left g-2" id="users">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3" id="user-998">
+				<div class="card m-auto mb-4">
+					<div class="card-header">
+						<p><strong>Nombre: </strong><span id="nombre-998">Rodrigo Figueroa Martinez</span><p>
+					</div>
+					<div class="card-body">
+						<p><strong>Rut: </strong><span id="rut-998"> 20.897.988-4</span></p>
+						<p><strong>Tipo de Usuario: </strong><span id="tipoUsuario-998">Alumno</span></p>
+						<p><strong>Carrera:</strong> <span id= "carrera-998">Electrica</span></p>
+						<p><strong>Teléfono:</strong> <span id="telefono-998"> 56986717296</span></p>
+						<p><strong>Correo:</strong><span id="correo-998"> ignacio.example@gmail.com</span></p>
+						<button class="btn btn-danger" onclick="abrirModalDarDeBaja(998)">Bloquear</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mb-4">
+		<h1>Perfiles Bloqueados</h1>
+	</div>
+	<div class="container">
+		<div class="row justify-content-left align-items-left g-2" id="downedUsers">
+			
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3" id="user-999">
+				<div class="card m-auto mb-4">
+					<div class="card-header">
+						<p><strong>Nombre: </strong><span id="nombre-999">Ignacio Figueroa Martinez</span><p>
+					</div>
+					<div class="card-body">
+						<p><strong>Rut: </strong><span id="rut-999"> 20.897.987-4</span></p>
+						<p><strong>Tipo de Usuario: </strong><span id="tipoUsuario-999">Alumno</span></p>
+						<p><strong>Carrera:</strong> <span id= "carrera-999">Electrica</span></p>
+						<p><strong>Teléfono:</strong> <span id="telefono-999"> 56986717295</span></p>
+						<p><strong>Correo:</strong><span id="correo-999"> ignacio.example@gmail.com</span></p>
+						<p class="mensaje-baja"><strong>Razon de Bloqueo:</strong><span> No fue a clase</span></p>
+						<button class="btn btn-success" onclick="restaurarUsuario(999)">Desbloquear</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  	<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="addUserModalLabel">Añadir Usuario</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="addUserForm">
+						<div class="mb-3">
+							<label for="nombre" class="form-label">Nombre</label>
+							<input type="text" class="form-control" id="nombre" required>
+						</div>
+						<div class="mb-3">
+							<label for="apellido1" class="form-label">Apellido Paterno</label>
+							<input type="text" class="form-control" id="apellido1" required>
+						</div>
+						<div class="mb-3">
+							<label for="apellido2" class="form-label">Apellido Materno</label>
+							<input type="text" class="form-control" id="apellido2" required>
+						</div>
+						<div class="mb-3">
+							<label for="rut" class="form-label">RUT</label>
+							<input type="text" class="form-control" id="rut" required>
+						</div>
+						
+						<div class="mb-3">
+							<label for="carrera" class="form-label">Carrera</label>
+							<input type="text" class="form-control" id="carrera" required>
+						</div>
+						<div class="mb-3">
+							<label for="telefono" class="form-label">Teléfono</label>
+							<input type="text" class="form-control" id="telefono" required>
+						</div>
+						<div class="mb-3">
+							<label for="correo" class="form-label">Correo Electrónico</label>
+							<input type="email" class="form-control" id="correo" required>
+						</div>
+						<button type="button" class="btn btn-primary" id="saveUserButton">Guardar Usuario</button>
+					</form>
+				</div>
+		  	</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="darDeBajaModal" tabindex="-1" aria-labelledby="darDeBajaModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="darDeBajaModalLabel">Dar de Baja</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <form id="darDeBajaForm">
+				<div class="mb-3">
+				  <label for="bajaMensaje" class="form-label">Mensaje</label>
+				  <textarea id="bajaMensaje" class="form-control" rows="3" placeholder="Ingrese un mensaje..."></textarea>
+				</div>
+			  </form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+			  <button type="button" class="btn btn-danger" id="confirmarBaja">Confirmar Baja</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+    <script src="navbar.js"></script>
+	<script src="perfilesCoordinador.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="navbar.css"/>
+	<link rel="stylesheet" href="perfilesCoordinador.css"/>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

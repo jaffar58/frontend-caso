@@ -1,0 +1,96 @@
+
+
+/* Estilo general para la sidebar */
+.sidebar {
+    position: fixed;
+    top: 56px; /* Altura de la navbar */
+    left: -240px; /* Oculta la sidebar inicialmente */
+    width: 240px;
+    height: 100%;
+    background-color: #1169c1;
+    transition: left 0.3s ease;
+    z-index: 1050;
+  }
+  
+  /* Sidebar expandida */
+  .sidebar.expanded {
+    left: 0;
+  }
+  
+  /* Ocultar texto en estado colapsado (opcional para iconos) */
+  .sidebar .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+  }
+  
+  /* Estilo solo para pantallas grandes */
+  @media (min-width: 768px) {
+    .sidebar {
+      display: none; /* Ocultar la sidebar en pantallas grandes */
+    }
+  
+    .navbar {
+      display: flex; /* Mostrar solo la navbar */
+    }
+  }
+
+.navbar-permanent .navbar-nav{
+    flex-direction: row !important;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 15px; /* Espacio entre elementos */
+  }
+
+  .contenedor-con-margin {
+    margin-top: 95px; /* Ajusta este valor según la altura de tu navbar */
+  }
+
+  @media (max-width: 576px) { /* Para pantallas pequeñas */
+    #navbarDropdownMenuLink {
+      width: 100%; /* Ancho completo */
+      font-size: 0.8rem; /* Tamaño de texto más pequeño */
+    }
+  }
+
+  @media (max-width: 340px) { /* Para pantallas pequeñas */
+    #navbarDropdownMenuLink {
+      width: 100%; /* Ancho completo */
+      font-size: 0.5rem; /* Tamaño de texto más pequeño */
+    }
+  }
+
+  .navbar .nav-link img {
+    max-width: 52px; /* Tamaño predeterminado */
+    height: auto;
+  }
+
+
+  
+  @media (max-width: 576px) {
+    .navbar .nav-link img {
+      max-width: 36px; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+  }
+
+  #sidebarToggle{
+    border: none;
+  }
+  @media (max-width: 576px){
+  #sidebarToggle{
+    align-items: center; 
+    background-size: contain;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+}
+@media (max-width: 576px){
+    #sidebarToggleIcon{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+  }
+  

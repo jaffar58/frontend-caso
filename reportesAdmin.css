@@ -1,0 +1,56 @@
+@media (max-width: 576px) {
+
+    .card-text {
+        font-size: 0.9rem; /* Texto descriptivo más pequeño */
+    }
+}
+
+@media (max-width: 320px) {
+    .card-title {
+        font-size: 0.85rem;
+    }
+
+    .card .card-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pantallas muy pequeñas (menores de 320px) */
+@media (max-width: 576px) {
+    .custom-label {
+        font-size: 0.8rem; /* Más pequeño en pantallas pequeñas */
+    }
+
+    /* Reducir el tamaño de los placeholders en pantallas pequeñas */
+    ::placeholder {
+        font-size: 0.8rem; /* Hacer el placeholder más pequeño */
+    }
+
+    /* Reducir el tamaño de las opciones (option) en pantallas pequeñas */
+    .custom-select-option {
+        font-size: 0.8rem; /* Más pequeño en pantallas pequeñas */
+    }
+}
+
+/* Reducir aún más en pantallas extra pequeñas (xs) */
+@media (max-width: 400px) {
+    .custom-label {
+        font-size: 0.7rem; /* Aún más pequeño */
+    }
+
+    /* Reducir el tamaño de los placeholders aún más */
+    ::placeholder {
+        font-size: 0.7rem; /* Hacer el placeholder aún más pequeño */
+    }
+
+    /* Reducir aún más el tamaño de las opciones (option) */
+    .custom-select-option {
+        font-size: 0.7rem; /* Aún más pequeño en pantallas más pequeñas */
+    }
+}
