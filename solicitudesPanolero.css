@@ -1,0 +1,22 @@
+@media (max-width: 400px) {
+    .card-title {
+        font-size: 0.85rem;
+    }
+
+    .card .card-text {
+        font-size: 0.8rem;
+    }
+
+    .card .btn-primary {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+    .card .btn-danger {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+    .card .btn-success {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+}

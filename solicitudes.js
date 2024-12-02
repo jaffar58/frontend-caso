@@ -32,4 +32,4 @@ function mostrarListaSolicitudes() {
 }
 
 // Llamar la función cuando la página cargue
-window.onload = mostrarListaSolicitudes;
+//window.onload = mostrarListaSolicitudes;
