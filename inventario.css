@@ -15,7 +15,6 @@
     z-index: 1;
     list-style-type: none;
     margin: 0;
-    padding-left: 0;
 }
 
 /* Estilo para los elementos dentro del dropdown */
@@ -31,16 +30,9 @@
 }
 
 .dropdown button {
-	background-color: #007BFF;
 	color: white;
-	border: none;
-	padding: 10px;
 	border-radius: 5px;
 	cursor: pointer;
-}
-
-.dropdown button:hover {
-	background-color: #0056b3;
 }
 
 /* Estilo del botón eliminar */

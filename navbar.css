@@ -1,4 +1,14 @@
+.dropbtn:hover{
+  background-color: #2B7F75 !important;
+}
 
+.dropbtn{
+  background-color: #2A9D8F !important;
+}
+
+.navbar{
+  background-color: #264653 !important;
+}
 
 /* Estilo general para la sidebar */
 .sidebar {
@@ -7,7 +17,7 @@
     left: -240px; /* Oculta la sidebar inicialmente */
     width: 240px;
     height: 100%;
-    background-color: #1169c1;
+    background-color: #264653;
     transition: left 0.3s ease;
     z-index: 1050;
   }
